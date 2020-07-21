@@ -1,0 +1,14 @@
+{
+    "nixpkgs": {
+        "branch": "fix-dash-on-darwin",
+        "description": "Nix Packages collection",
+        "homepage": null,
+        "owner": "adrian-gierakowski",
+        "repo": "nixpkgs",
+        "rev": "3020abe5b591d201cc6b760f3a9c6e4b94cfca2d",
+        "sha256": "1flgivigbnndsvmnwy7zwdwgrfbmq0xkc7j6d9r7wh22ij08qr16",
+        "type": "tarball",
+        "url": "https://github.com/adrian-gierakowski/nixpkgs/archive/3020abe5b591d201cc6b760f3a9c6e4b94cfca2d.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}
