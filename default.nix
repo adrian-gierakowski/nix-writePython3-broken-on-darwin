@@ -13,7 +13,7 @@ let
         ignoreAttribute = super.lib.optionalString (flakeIgnore != []) "--ignore ${super.lib.concatMapStringsSep "," super.lib.escapeShellArg flakeIgnore}";
       in
       super.writers.makeScriptWriter {
-        interpreter = "${self.coreutils}/bin/env ${py}/bin/python";
+        interpreter = "${self.bash}/bin/bash ${py}/bin/python";
         check = super.writers.writeDash "python3check.sh" ''
           exec ${super.python3Packages.flake8}/bin/flake8 --show-source ${ignoreAttribute} "$1"
         '';
